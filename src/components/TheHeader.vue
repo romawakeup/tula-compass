@@ -19,7 +19,7 @@
 
 <style scoped>
 .header {
-padding-top: 30px;
+padding-top: 50px;
 }
 
 .header__wrapper {

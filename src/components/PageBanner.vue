@@ -16,7 +16,7 @@
             вкусные блюда и создать незабываемые воспоминания.</p>
           <p class="page-banner__text">Планируйте свой идеальный выходной с Тульским компасом!</p>
         </div>
-        <!-- <img src="./icons/bubble.png" class="page-banner__img"> -->
+        <img src="./icons/bubble.png" class="page-banner__img">
       </div>
     </div>
   </section>
@@ -44,6 +44,16 @@
 .page-banner__text {
   margin-bottom: 15px;
   font-size: 1.5rem;
+}
+
+.page-banner__img{
+
+}
+
+@media (max-width:960px) {
+  .page-banner__img{
+    display: none;
+  }
 }
 
 @media (max-width:768px) {

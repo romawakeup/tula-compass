@@ -2,6 +2,7 @@
 import TheHeader from './components/TheHeader.vue';
 import TheMain from './components/TheMain.vue';
 import TheFooter from './components/TheFooter.vue';
+import TheGarland from './components/TheGarland.vue';
 
 const createSnowflake = () => {
   const snowflake = document.createElement('div');
@@ -10,6 +11,7 @@ const createSnowflake = () => {
   snowflake.style.left = Math.random() * 100 + 'vw';
   snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
   snowflake.style.opacity = Math.random();
+  snowflake.style.top = '-10px';
   document.body.appendChild(snowflake);
 
   snowflake.addEventListener('animationend', () => {
@@ -22,6 +24,7 @@ setInterval(createSnowflake, 1000);
 
 <template>
   <div class="#app">
+    <TheGarland />
     <TheHeader />
     <TheMain class="indent"/>
     <TheFooter />
@@ -62,7 +65,7 @@ setInterval(createSnowflake, 1000);
   }
 
   100% {
-    transform: translateY(100vh);
+    transform: translateY(calc(100vh + 1900px));
   }
 }
 
